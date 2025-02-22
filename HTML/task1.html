@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shapes</title>
+    <title>People Table</title>
     <style>
         .container {
             padding: 4px;
             display: flex;
-            flex-direction: column;
             height: 90vh; /* Use viewport height to center vertically */
             width: 100%;
             align-items: center;
@@ -16,18 +15,14 @@
         }
 
         table {
-            border: 2px solid black;
-            border-radius: 10px;
             width: 98%;
-            /*border-collapse: collapse; */
+            border-collapse: collapse;
             margin: 20px;
             font-family: Arial, sans-serif;
-            background-color: #65ede7;
         }
 
         th, td {
-            border: 2px solid black;
-            border-radius: 50px;
+            border: 2px solid white;
             padding: 7px 20px;
             text-align: left;
             background-color: #65ede7;
@@ -38,66 +33,6 @@
             background-color: #65ede7;
             color: black;
             font-weight: bold;
-        }
-
-        .shapes-container {
-            height: 50%;
-            width: 100%;
-            display: flex;
-            align-items: center; /* Center vertically within shapes-container */
-            justify-content: center; /* Center horizontally within shapes-container */
-            flex-direction: column;
-        }
-
-        .row {
-            gap: 20px;
-            width: fit-content; /* Adjust width to fit content, allowing centering */
-            height: 33.33%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center; /* Center the shapes within each row horizontally */
-        }
-
-        .oval {
-            width: 80px;
-            height: 60px;
-            border-radius: 50%;
-            border: 3px solid #6fc605; /* Fixed: Added 'solid' to border property */
-        }
-
-        .shape1 {
-            height: 60px;
-            width: 80px;
-            border: 3px solid #6fc605; /* Fixed: Added 'solid' to border property */
-            border-radius: 10px;
-        }
-
-        .shape3 {
-            height: 60px;
-            width: 80px;
-            border: 3px solid #6fc605;
-            border-radius: 20px;
-        }
-
-        .shape4 {
-            height: 60px;
-            width: 80px;
-            border: 3px solid #6fc605;
-            border-radius: 10px;
-        }
-
-        .shape5 {
-            height: 60px;
-            width: 80px;
-            border: 3px solid #6fc605;
-            border-radius: 2px;
-        }
-
-        .shape9 {
-            height: 60px;
-            width: 80px;
-            border: 3px solid #6fc605;
-            border-radius: 0px 10px 0px 10px;
         }
     </style>
 </head>
@@ -125,24 +60,6 @@
             <td>80</td>
         </tr>
     </table>
-
-    <div class="shapes-container">
-        <div class="row">
-            <div class="shape1"></div>
-            <div class="shape1"></div>
-            <div class="shape3"></div>
-        </div>
-        <div class="row">
-            <div class="shape4"></div>
-            <div class="shape5"></div>
-            <div class="shape3"></div>
-        </div>
-        <div class="row">
-            <div class="oval"></div>
-            <div class="shape5"></div>
-            <div class="shape9"></div>
-        </div>
-    </div>
 </div>
 </body>
 </html>
