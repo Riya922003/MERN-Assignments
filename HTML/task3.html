@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Example</title>
+    <style>
+        .link-container {
+            border: 1px solid #000;
+            background-color: #f0f0f0; /* Light gray background as in the image */
+            padding: 10px;
+            margin: 20px;
+            width: 500px; /* Adjust width to match the image */
+            text-align: center;
+        }
+        .link-text {
+            margin-bottom: 5px;
+            font-family: Arial, sans-serif;
+        }
+        .links {
+            display: inline-block;
+        }
+        .links a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="link-container">
+    <div class="link-text">Click any of the following links</div>
+    <div class="links">
+        <a href="#" target="_blank">Opens in New</a> |
+        <a href="#" target="_self">Opens in Self</a> |
+        <a href="#" target="_parent">Opens in Parent</a> |
+        <a href="#" target="_body">Opens in Body</a> |
+        <a href="mailto:example@email.com">Send email</a>
+    </div>
+</div>
+</body>
+</html>
