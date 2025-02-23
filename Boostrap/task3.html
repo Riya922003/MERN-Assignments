@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builderz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #f0c23d;
+            color: black;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: black !important; /* Ensure all nav links are black */
+        }
+        .navbar-dark .navbar-brand {
+            color: black !important; /* Ensure brand text is black */
+        }
+        .top-bar {
+            background-color: #f0c23d;
+            padding: 10px 0;
+        }
+        .hero-section {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-section img {
+            width: 100%;
+            filter: brightness(50%);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .info-section {
+            background-color: #0a1931;
+            color: white;
+            padding: 30px 0;
+        }
+        .info-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0c23d;
+            margin: 10px;
+        }
+        /* Footer Styles */
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            border-top: 1px solid #e7e7e7;
+        }
+        .footer-section {
+            margin: 0 20px;
+            min-width: 150px;
+        }
+        .footer-logo {
+            font-size: 2em;
+            color: #4a86e8;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            display: block;
+            color: #666;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .footer-links a:hover {
+            color: #4a86e8;
+        }
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+            color: #666;
+            font-size: 0.8em;
+            border-top: 1px solid #e7e7e7;
+            width: 100%;
+        }
+        /* Responsive design for footer */
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-section {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <div class="container">
+        <a class="navbar-brand text-warning" href="#">Company Name</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="btn btn-outline-dark" href="#">Get A Quote</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h2 class="text-center">Pricing</h2>
+    <p class="text-center">Quickly build an effective pricing table for your potential customers with this Bootstrap example.</p>
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4>Free</h4>
+                </div>
+                <div class="card-body">
+                    <h1>$0 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button class="btn btn-outline-primary">Sign up for free</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4>Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h1>$15 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button class="btn btn-primary">Get started</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4>Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h1>$29 <small class="text-muted">/ mo</small></h1>
+                    <ul class="list-unstyled">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button class="btn btn-primary">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-section">
+        <div class="footer-logo">B</div>
+        <div class="copyright">© 2017</div>
+    </div>
+    <div class="footer-section">
+        <div class="footer-title">Features</div>
+        <div class="footer-links">
+            <a href="#">Cool stuff</a>
+            <a href="#">Random feature</a>
+            <a href="#">Team feature</a>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="footer-title">Resources</div>
+        <div class="footer-links">
+            <a href="#">Resource name</a>
+            <a href="#">Another resource</a>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="footer-title">About</div>
+        <div class="footer-links">
+            <a href="#">Team</a>
+            <a href="#">Locations</a>
+            <a href="#">Privacy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
